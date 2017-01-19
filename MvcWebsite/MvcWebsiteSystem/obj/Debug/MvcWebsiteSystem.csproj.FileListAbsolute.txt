@@ -1,0 +1,10 @@
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\bin\Debug\MvcWebsiteSystem.dll.config
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\bin\Debug\MvcWebsiteSystem.dll
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\bin\Debug\MvcWebsiteSystem.pdb
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\bin\Debug\EntityFramework.dll
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\bin\Debug\EntityFramework.xml
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\obj\Debug\MvcWebsiteSystem.csprojResolveAssemblyReference.cache
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\obj\Debug\MvcWebsiteSystem.dll
+C:\Users\dkingma1\Documents\GitHub\MvcClassLibrary\MvcWebsite\MvcWebsiteSystem\obj\Debug\MvcWebsiteSystem.pdb
