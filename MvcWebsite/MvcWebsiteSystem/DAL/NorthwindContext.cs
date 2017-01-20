@@ -5,6 +5,8 @@ namespace MvcWebsiteSystem.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
+    using MvcWebsiteSystem.Entities;
+
     public partial class NorthwindContext : DbContext
     {
         public NorthwindContext()
