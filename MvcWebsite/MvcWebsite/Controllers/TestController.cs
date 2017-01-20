@@ -19,8 +19,8 @@ namespace MvcWebsite.Controllers
         // GET: Test
         public ActionResult Index()
         {
-            return View(regionModel.Region_List());
-            //return View(rc.Region_List());
+            //return View(regionModel.Region_List());
+            return View(rc.Region_List());
         }
     }
 }
