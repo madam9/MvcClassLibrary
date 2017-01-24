@@ -44,14 +44,13 @@ namespace MvcWebsite.Controllers
             return View(region);
         }
         // GET: Regions/Create
-        // GET: Regions/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Region region = rc.Region_Delete(id);
+            Region region = rc.Regions.Find(id);
             if (region == null)
             {
                 return HttpNotFound();
@@ -64,7 +63,7 @@ namespace MvcWebsite.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Region region = rc.Region_Delete.Find(id);
+            Region region = rc.Regions.Find(id);
             rc.Region_Delete(region);
             return RedirectToAction("Index");
         }
