@@ -43,38 +43,43 @@ namespace MvcWebsite.Controllers
 
             return View(region);
         }
-        // GET: Regions/Create
+        // GET: Regions/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Region region = rc.Regions.Find(id);
-            if (region == null)
+            else
             {
-                return HttpNotFound();
+                int regionid = id ?? default(int);
+                Region region = rc.Region_Get(regionid);
+                if (region == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(region);
+
             }
-            return View(region);
         }
 
         // POST: Regions/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed([Bind(Include = "RegionID")]int regionId)
         {
-            Region region = rc.Regions.Find(id);
-            rc.Region_Delete(region);
+            rc.Region_Delete(regionId);
             return RedirectToAction("Index");
+
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                rc.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Remove(bool remove)
+        //{
+        //    if (Remove)
+        //    {
+        //        rc.Region_Delete();
+        //    }
+        //    base.Dispose(Remove);
+        //}
     }
 }

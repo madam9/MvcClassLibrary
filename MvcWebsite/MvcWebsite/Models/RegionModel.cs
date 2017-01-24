@@ -17,5 +17,9 @@ namespace MvcWebsite.Models
         {
             return Region_List();
         }
+        public Region Delete_Region(int regionId)
+        {
+            return Delete_Region(regionId);
+        }
     }
 }
